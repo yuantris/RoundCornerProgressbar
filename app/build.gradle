@@ -32,9 +32,7 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    buildFeatures {
-        compose true
-    }
+
 }
 
 dependencies {
@@ -48,4 +46,13 @@ dependencies {
     androidTestImplementation libs.espresso.core
     implementation libs.core.splashscreen
     debugImplementation libs.leakcanary.android
+
+    api libs.lifecycle.livedata.ktx
+    api libs.lifecycle.viewmodel.ktx
+    api libs.lifecycle.runtime.ktx
+    implementation libs.kotlin.reflect
+    implementation libs.kotlinx.coroutines.core
+    implementation libs.kotlinx.coroutines.android
+
+    implementation project(path: ':round-corner-progress-bar')
 }

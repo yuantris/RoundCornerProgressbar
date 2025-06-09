@@ -1,11 +1,5 @@
 ![Android Kotlin](https://img.shields.io/badge/Android-Kotlin-6C3FD1.svg?style=flat&logo=android)
 ![Minimum SDK Version](https://img.shields.io/badge/API-17+-brightgreen)
-[![Maven Central](https://img.shields.io/maven-central/v/com.akexorcist/round-corner-progress-bar?color=brightgreen&label=Maven%20Central)](https://search.maven.org/artifact/com.akexorcist/round-corner-progress-bar)
-![Apache 2.0](https://img.shields.io/badge/License-Apache%202-brightgreen)
-[![Workflow Status](https://github.com/akexorcist/RoundCornerProgressBar/actions/workflows/android.yml/badge.svg)](https://github.com/akexorcist/RoundCornerProgressBar/actions)
-
-[![Google Dev Library](https://img.shields.io/badge/Google%20Dev%20Library-Round%20Corner%20Progress%20Bar-blue.svg?style=flat)](https://devlibrary.withgoogle.com/products/android/repos/akexorcist-RoundCornerProgressBar)
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Round%20Corner%20Progress%20Bar-blue.svg?style=flat)](http://android-arsenal.com/details/1/1375)
 
 # RoundCornerProgressBar
 
@@ -20,44 +14,8 @@ Colorful rounded corner progress bar
 ## Gradle
 
 ```groovy
-implementation 'com.akexorcist:round-corner-progress-bar:2.2.1'
+implementation 'io.core.widget:progressbar:1.0.0'
 ```
-
-## Demo
-
-Go to [Google Play](https://play.google.com/store/apps/details?id=com.akexorcist.roundcornerprogressbar) to download the demo app
-
-# Overview
-
-### Round Corner Progress Bar
-
-Simple round corner progress bar
-
-![Round Corner Progress Bar](/image/overview_simple.jpg)
-
-### CenteredRoundCornerProgressBar
-
-Round corner progress bar with progress expands from the center
-
-![Centered Round Corner Progress Bar](/image/overview_centered.jpg)
-
-### Icon Round Corner Progress Bar
-
-Round corner progress bar with heading icon
-
-![Icon Round Corner Progress Bar](/image/overview_icon.jpg)
-
-### TextRoundCornerProgressBar
-
-Round corner progress bar with text inside the progress
-
-![Icon Round Corner Progress Bar](/image/overview_text.jpg)
-
-### IndeterminateRoundCornerProgressBar and IndeterminateCenteredRoundCornerProgressBar
-
-Simple round corner progress bar and centered round corner progress bar with indeterminate animation
-
-![Indeterminate Round Corner Progress Bar and Indeterminate Centered Round Corner Progress Bar](/image/overview_indeterminate.gif)
 
 # Feature
 
@@ -91,36 +49,34 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 ### Example
 
 ```xml
-<com.akexorcist.roundcornerprogressbar.IconRoundCornerProgressBar
+<com.ffgreatking.progressbar.IconRoundCornerProgressBar
     android:layout_width="260dp"
     android:layout_height="30dp"
-    app:rcBackgroundColor="#0A000000"
-    app:rcBackgroundPadding="2dp"
-    app:rcMax="100"
-    app:rcProgress="40"
-    app:rcProgressColor="#EF5350"
-    app:rcRadius="10dp"
-    app:rcSecondaryProgress="60"
-    app:rcSecondaryProgressColor="#40EF5350" />
+    app:fyBackgroundColor="#0A000000"
+    app:fyBackgroundPadding="2dp"
+    app:fyMax="100"
+    app:fyProgress="40"
+    app:fyProgressColor="#EF5350"
+    app:fyRadius="10dp"
+    app:fySecondaryProgress="60"
+    app:fySecondaryProgressColor="#40EF5350" />
 ```
-
-![Round Corner Progress Bar](/image/sample_simple.jpg)
 
 ### Layout XML
 
 ```xml
-<com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
-    app:rcProgress="float"
-    app:rcSecondaryProgress="float"
-    app:rcMax="float"
-    app:rcRadius="dimension"
-    app:rcBackgroundPadding="dimension"
-    app:rcReverse="boolean"
-    app:rcProgressColor="color"
-    app:rcSecondaryProgressColor="color"
-    app:rcBackgroundColor="color"
-    app:rcAnimationEnable="boolean"
-    app:rcAnimationSpeedScale="float" />
+<com.ffgreatking.progressbar.RoundCornerProgressBar
+    app:fyProgress="float"
+    app:fySecondaryProgress="float"
+    app:fyMax="float"
+    app:fyRadius="dimension"
+    app:fyBackgroundPadding="dimension"
+    app:fyReverse="boolean"
+    app:fyProgressColor="color"
+    app:fySecondaryProgressColor="color"
+    app:fyBackgroundColor="color"
+    app:fyAnimationEnable="boolean"
+    app:fyAnimationSpeedScale="float" />
 ```
 
 ### Public Methods
@@ -179,33 +135,31 @@ Same as RoundCornerProgressBar but reversing does not supported.
 ### Example
 
 ```xml
-<com.akexorcist.roundcornerprogressbar.CenteredRoundCornerProgressBar
+<com.ffgreatking.progressbar.CenteredRoundCornerProgressBar
     android:layout_width="260dp"
     android:layout_height="30dp"
-    app:rcBackgroundColor="#0A000000"
-    app:rcBackgroundPadding="2dp"
-    app:rcMax="100"
-    app:rcProgress="40"
-    app:rcProgressColor="#EF5350"
-    app:rcRadius="10dp"/>
+    app:fyBackgroundColor="#0A000000"
+    app:fyBackgroundPadding="2dp"
+    app:fyMax="100"
+    app:fyProgress="40"
+    app:fyProgressColor="#EF5350"
+    app:fyRadius="10dp"/>
 ```
-
-![Centerd Round Corner Progress Bar](/image/sample_centered.jpg)
 
 ### Layout XML
 
 ```xml
-<com.akexorcist.roundcornerprogressbar.CenteredRoundCornerProgressBar
-    app:rcProgress="float"
-    app:rcSecondaryProgress="float"
-    app:rcMax="float"
-    app:rcRadius="dimension"
-    app:rcBackgroundPadding="dimension"
-    app:rcProgressColor="color"
-    app:rcSecondaryProgressColor="color"
-    app:rcBackgroundColor="color"
-    app:rcAnimationEnable="boolean"
-    app:rcAnimationSpeedScale="float" />
+<com.ffgreatking.progressbar.CenteredRoundCornerProgressBar
+    app:fyProgress="float"
+    app:fySecondaryProgress="float"
+    app:fyMax="float"
+    app:fyRadius="dimension"
+    app:fyBackgroundPadding="dimension"
+    app:fyProgressColor="color"
+    app:fySecondaryProgressColor="color"
+    app:fyBackgroundColor="color"
+    app:fyAnimationEnable="boolean"
+    app:fyAnimationSpeedScale="float" />
 ```
 
 ### Public Methods
@@ -258,58 +212,56 @@ fun setOnProgressChangedListener(listener: OnProgressChangedListener)
 Icon size is required for this progress bar. Use `wrap_content` for `layout_height` is recommended.
 
 ```xml
-<com.akexorcist.roundcornerprogressbar.IconRoundCornerProgressBar
+<com.ffgreatking.progressbar.IconRoundCornerProgressBar
         android:layout_height="wrap_content"
-        app:rcIconSize="40dp"
+        app:fyIconSize="40dp"
         ... />
 ```
 
 ### Example
 
 ```xml
-<com.akexorcist.roundcornerprogressbar.IconRoundCornerProgressBar
+<com.ffgreatking.progressbar.IconRoundCornerProgressBar
     android:layout_width="260dp"
     android:layout_height="wrap_content"
-    app:rcBackgroundColor="#0A000000"
-    app:rcBackgroundPadding="2dp"
-    app:rcIconBackgroundColor="#00796B"
-    app:rcIconPadding="5dp"
-    app:rcIconSize="40dp"
-    app:rcIconSrc="@drawable/ic_android"
-    app:rcMax="150"
-    app:rcProgress="90"
-    app:rcProgressColor="#EF5350"
-    app:rcRadius="5dp"
-    app:rcReverse="true" />
+    app:fyBackgroundColor="#0A000000"
+    app:fyBackgroundPadding="2dp"
+    app:fyIconBackgroundColor="#00796B"
+    app:fyIconPadding="5dp"
+    app:fyIconSize="40dp"
+    app:fyIconSrc="@drawable/ic_android"
+    app:fyMax="150"
+    app:fyProgress="90"
+    app:fyProgressColor="#EF5350"
+    app:fyRadius="5dp"
+    app:fyReverse="true" />
 ```
-
-![Icon Round Corner Progress Bar](/image/sample_icon.jpg)
 
 ### Layout XML
 
 ```xml
-<com.akexorcist.roundcornerprogressbar.IconRoundCornerProgressBar
-        app:rcProgress="float"
-        app:rcSecondaryProgress="float"
-        app:rcMax="float"
-        app:rcRadius="dimension"
-        app:rcBackgroundPadding="dimension"
-        app:rcReverse="boolean"
-        app:rcProgressColor="color"
-        app:rcSecondaryProgressColor="color"
-        app:rcBackgroundColor="color"
-        app:rcAnimationEnable="boolean"
-        app:rcAnimationSpeedScale="float"
-        app:rcIconSrc="reference"
-        app:rcIconSize="dimension"
-        app:rcIconWidth="dimension"
-        app:rcIconHeight="dimension"
-        app:rcIconPadding="dimension"
-        app:rcIconPaddingLeft="dimension"
-        app:rcIconPaddingRight="dimension"
-        app:rcIconPaddingTop="dimension"
-        app:rcIconPaddingBottom="dimension"
-        app:rcIconBackgroundColor="color" />
+<com.ffgreatking.progressbar.IconRoundCornerProgressBar
+        app:fyProgress="float"
+        app:fySecondaryProgress="float"
+        app:fyMax="float"
+        app:fyRadius="dimension"
+        app:fyBackgroundPadding="dimension"
+        app:fyReverse="boolean"
+        app:fyProgressColor="color"
+        app:fySecondaryProgressColor="color"
+        app:fyBackgroundColor="color"
+        app:fyAnimationEnable="boolean"
+        app:fyAnimationSpeedScale="float"
+        app:fyIconSrc="reference"
+        app:fyIconSize="dimension"
+        app:fyIconWidth="dimension"
+        app:fyIconHeight="dimension"
+        app:fyIconPadding="dimension"
+        app:fyIconPaddingLeft="dimension"
+        app:fyIconPaddingRight="dimension"
+        app:fyIconPaddingTop="dimension"
+        app:fyIconPaddingBottom="dimension"
+        app:fyIconBackgroundColor="color" />
 ```
 
 ### Public Methods
@@ -390,47 +342,45 @@ fun setOnIconClickListener(listener: OnIconClickListener)
 ### Example
 
 ```xml
-<com.akexorcist.roundcornerprogressbar.TextRoundCornerProgressBar
+<com.ffgreatking.progressbar.TextRoundCornerProgressBar
     android:layout_width="260dp"
     android:layout_height="30dp"
-    app:rcBackgroundColor="#0A000000"
-    app:rcBackgroundPadding="2dp"
-    app:rcMax="100"
-    app:rcProgress="40"
-    app:rcProgressColor="#EF5350"
-    app:rcRadius="80dp"
-    app:rcReverse="true"
-    app:rcSecondaryProgress="60"
-    app:rcSecondaryProgressColor="#40009688"
-    app:rcTextPositionPriority="outside"
-    app:rcTextProgress="40"
-    app:rcTextProgressColor="#111111" />
+    app:fyBackgroundColor="#0A000000"
+    app:fyBackgroundPadding="2dp"
+    app:fyMax="100"
+    app:fyProgress="40"
+    app:fyProgressColor="#EF5350"
+    app:fyRadius="80dp"
+    app:fyReverse="true"
+    app:fySecondaryProgress="60"
+    app:fySecondaryProgressColor="#40009688"
+    app:fyTextPositionPriority="outside"
+    app:fyTextProgress="40"
+    app:fyTextProgressColor="#111111" />
 ```
-
-![Text Round Corner Progress Bar](/image/sample_text.jpg)
 
 ### Layout XML
 
 ```xml
-<com.akexorcist.roundcornerprogressbar.TextRoundCornerProgressBar
-        app:rcProgress="float"
-        app:rcSecondaryProgress="float"
-        app:rcMax="float"
-        app:rcRadius="dimension"
-        app:rcBackgroundPadding="dimension"
-        app:rcReverse="boolean"
-        app:rcProgressColor="color"
-        app:rcSecondaryProgressColor="color"
-        app:rcBackgroundColor="color"
-        app:rcAnimationEnable="boolean"
-        app:rcAnimationSpeedScale="float"
-        app:rcTextProgressColor="color"
-        app:rcTextProgressSize="dimension"
-        app:rcTextProgressMargin="dimension"
-        app:rcTextProgress="String"
-        app:rcTextInsideGravity="start|end"
-        app:rcTextOutsideGravity="start|end"
-        app:rcTextPositionPriority="inside|outside" />
+<com.ffgreatking.progressbar.TextRoundCornerProgressBar
+        app:fyProgress="float"
+        app:fySecondaryProgress="float"
+        app:fyMax="float"
+        app:fyRadius="dimension"
+        app:fyBackgroundPadding="dimension"
+        app:fyReverse="boolean"
+        app:fyProgressColor="color"
+        app:fySecondaryProgressColor="color"
+        app:fyBackgroundColor="color"
+        app:fyAnimationEnable="boolean"
+        app:fyAnimationSpeedScale="float"
+        app:fyTextProgressColor="color"
+        app:fyTextProgressSize="dimension"
+        app:fyTextProgressMargin="dimension"
+        app:fyTextProgress="String"
+        app:fyTextInsideGravity="start|end"
+        app:fyTextOutsideGravity="start|end"
+        app:fyTextPositionPriority="inside|outside" />
 ```
 
 ### Public Methods
@@ -505,27 +455,25 @@ fun setOnProgressChangedListener(listener: OnProgressChangedListener)
 ### Example
 
 ```xml
-<com.akexorcist.roundcornerprogressbar.indeterminate.IndeterminateRoundCornerProgressBar
+<com.ffgreatking.progressbar.indeterminate.IndeterminateRoundCornerProgressBar
     android:layout_width="260dp"
     android:layout_height="10dp"
-    app:rcAnimationSpeedScale="3"
-    app:rcBackgroundColor="#0A000000"
-    app:rcProgressColor="#EF5350" />
+    app:fyAnimationSpeedScale="3"
+    app:fyBackgroundColor="#0A000000"
+    app:fyProgressColor="#EF5350" />
 ```
-
-![Indeterminate Round Corner Progress Bar](/image/sample_indeterminate.gif)
 
 ### Layout XML
 
 ```xml
-<com.akexorcist.roundcornerprogressbar.indeterminate.IndeterminateRoundCornerProgressBar
-        app:rcRadius="dimension"
-        app:rcBackgroundPadding="dimension"
-        app:rcReverse="boolean"
-        app:rcProgressColor="color"
-        app:rcSecondaryProgressColor="color"
-        app:rcBackgroundColor="color"
-        app:rcAnimationSpeedScale="float" />
+<com.ffgreatking.progressbar.indeterminate.IndeterminateRoundCornerProgressBar
+        app:fyRadius="dimension"
+        app:fyBackgroundPadding="dimension"
+        app:fyReverse="boolean"
+        app:fyProgressColor="color"
+        app:fySecondaryProgressColor="color"
+        app:fyBackgroundColor="color"
+        app:fyAnimationSpeedScale="float" />
 ```
 
 ### Public Methods
@@ -566,27 +514,25 @@ Same as IndeterminateRoundCornerProgressBar
 ### Example
 
 ```xml
-<com.akexorcist.roundcornerprogressbar.indeterminate.IndeterminateCenteredRoundCornerProgressBar
+<com.ffgreatking.progressbar.indeterminate.IndeterminateCenteredRoundCornerProgressBar
     android:layout_width="260dp"
     android:layout_height="10dp"
-    app:rcAnimationSpeedScale="0.75"
-    app:rcBackgroundColor="#0A000000"
-    app:rcProgressColor="#EF5350" />
+    app:fyAnimationSpeedScale="0.75"
+    app:fyBackgroundColor="#0A000000"
+    app:fyProgressColor="#EF5350" />
 ```
-
-![Indeterminate Centered Round Corner Progress Bar](/image/sample_indeterminate_centered.gif)
 
 ### Layout XML
 
 ```xml
-<com.akexorcist.roundcornerprogressbar.IndeterminateCenteredRoundCornerProgressBar
-        app:rcRadius="dimension"
-        app:rcBackgroundPadding="dimension"
-        app:rcReverse="boolean"
-        app:rcProgressColor="color"
-        app:rcSecondaryProgressColor="color"
-        app:rcBackgroundColor="color"
-        app:rcAnimationSpeedScale="float" />
+<com.ffgreatking.progressbar.IndeterminateCenteredRoundCornerProgressBar
+        app:fyRadius="dimension"
+        app:fyBackgroundPadding="dimension"
+        app:fyReverse="boolean"
+        app:fyProgressColor="color"
+        app:fySecondaryProgressColor="color"
+        app:fyBackgroundColor="color"
+        app:fyAnimationSpeedScale="float" />
 ```
 
 ### Public Methods
@@ -634,17 +580,15 @@ Gradient color for progress bar must be in int array resource. At least 2 colors
 </resources>
 
 <!-- Layout -->
-<com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+<com.ffgreatking.progressbar.RoundCornerProgressBar
     ...
-    app:rcBackgroundColor="#0A000000"
-    app:rcBackgroundPadding="4dp"
-    app:rcMax="100"
-    app:rcProgress="50"
-    app:rcProgressColors="@array/sample_progress_gradient"
-    app:rcRadius="30dp" />
+    app:fyBackgroundColor="#0A000000"
+    app:fyBackgroundPadding="4dp"
+    app:fyMax="100"
+    app:fyProgress="50"
+    app:fyProgressColors="@array/sample_progress_gradient"
+    app:fyRadius="30dp" />
 ```
-
-![Gradient Progress Bar Color](/image/sample_gradient.jpg)
 
 Progress bar does not clipped when size changed. So the gradient color will fully display without clipping also.
 
@@ -655,41 +599,20 @@ Animation when progress change is disabled by default (exclude `IndeterminatePro
 So you have to enable the animation by XML attribute or programmatically
 
 ```xml
-<com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+<com.ffgreatking.progressbar.RoundCornerProgressBar
     ...
-    app:rcAnimationEnable="true"
-    app:rcAnimationSpeedScale="1" />
+    app:fyAnimationEnable="true"
+    app:fyAnimationSpeedScale="1" />
 
 ```
 
 When progress changed, the animation will applied automatically.
 
-![Comparison Between With/Without Animation](/image/animation_comparison.gif)
-
 Animation speed scale's value is float between 0.2 - 5.0 (default is 1.0). Higher for slow down the animation, lower for speed up.
-
-# What's Next
-
-- IconTextRoundCornerProgressBar ([#69](https://github.com/akexorcist/Android-RoundCornerProgressBar/pull/69))
-- UI Preview improvement
-
-# Known Issues
-
-- Incorrect progress showing in `CenteredRoundCornerProgressBar` with 1%-2% value
-- Incorrect text's width in `TextRoundCornerProgressBar` when `outside` priority and value close to 100%
-- `setProgress(progress: Int)` does not update text position
-
-# Change Log
-
-See [CHANGELOG.md](CHANGELOG.md)
-
-# Migration
-
-See [MIGRATION.md](MIGRATION.md)
 
 # Licence
 
-Copyright 2023 Akexorcist
+Copyright 2025 Akexorcist
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this work except in compliance with the License. You may obtain a copy of the License in the LICENSE file, or at:
 

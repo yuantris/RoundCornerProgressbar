@@ -2,20 +2,26 @@ package com.core.lib.progressbar
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.core.lib.progressbar.ui.theme.RoundCornerProgressBarTheme
+import androidx.lifecycle.lifecycleScope
+import com.ffgreatking.progressbar.TextRoundCornerProgressBar
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val progressBar = findViewById<TextRoundCornerProgressBar>(R.id.progress_bar)
+
+        lifecycleScope.launch {
+
+            repeat(200) {
+                delay(300)
+                progressBar.setProgressText("$it%")
+                progressBar.setProgress(it)
+            }
+        }
 
     }
 }

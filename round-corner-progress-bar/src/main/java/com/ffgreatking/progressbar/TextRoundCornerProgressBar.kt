@@ -71,7 +71,7 @@ open class TextRoundCornerProgressBar : AnimatedRoundCornerProgressBar,
                 R.styleable.TextRoundCornerProgressBar_fyTextProgressColor, Color.WHITE
             )
             colorTextProgressOutside = getColor(
-                R.styleable.TextRoundCornerProgressBar_fyTextProgressColorOutside, Color.WHITE
+                R.styleable.TextRoundCornerProgressBar_fyTextProgressColorOutside, colorTextProgress
             )
 
             textProgressSize = getDimension(
@@ -161,10 +161,7 @@ open class TextRoundCornerProgressBar : AnimatedRoundCornerProgressBar,
     }
 
     private fun drawTextProgressColor() {
-        val isInside = textPositionPriority == PRIORITY_INSIDE ||
-                (tvProgress.measuredWidth + textProgressMargin * 2) <=
-                ((getLayoutWidth() - (getPadding() * 2)) / (getMax() / getProgress()))
-        tvProgress.setTextColor(if (isInside) colorTextProgress else colorTextProgressOutside)
+        tvProgress.setTextColor(colorTextProgress)
     }
 
     private fun drawTextProgressSize() {
@@ -191,8 +188,10 @@ open class TextRoundCornerProgressBar : AnimatedRoundCornerProgressBar,
         } else {
             if (textProgressWidth + textProgressMargin > progressWidth) {
                 alignTextProgressOutsideProgress()
+                tvProgress.setTextColor(colorTextProgressOutside)
             } else {
                 alignTextProgressInsideProgress()
+                tvProgress.setTextColor(colorTextProgress)
             }
         }
     }
