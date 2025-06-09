@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="round_corner_progress_bar_background_default">#5f5f5f</color>
+    <color name="round_corner_progress_bar_progress_default">#7f7f7f</color>
+    <color name="round_corner_progress_bar_secondary_progress_default">#00000000</color>
+    <declare-styleable name="AnimatedRoundCornerProgressBar">
+        <attr format="boolean" name="fyAnimationEnable"/>
+        <attr format="float" name="fyAnimationSpeedScale"/>
+    </declare-styleable>
+    <declare-styleable name="BaseRoundCornerProgressBar">
+        <attr format="boolean" name="fyReverse"/>
+        <attr format="float" name="fyProgress"/>
+        <attr format="float" name="fyMax"/>
+        <attr format="float" name="fySecondaryProgress"/>
+        <attr format="dimension" name="fyBackgroundPadding"/>
+        <attr format="dimension" name="fyRadius"/>
+        <attr format="color" name="fyProgressColor"/>
+        <attr format="reference" name="fyProgressColors"/>
+        <attr format="color" name="fySecondaryProgressColor"/>
+        <attr format="reference" name="fySecondaryProgressColors"/>
+        <attr format="color" name="fyBackgroundColor"/>
+    </declare-styleable>
+    <declare-styleable name="IconRoundCornerProgressBar">
+        <attr format="integer" name="fyIconSrc"/>
+        <attr format="dimension" name="fyIconSize"/>
+        <attr format="dimension" name="fyIconWidth"/>
+        <attr format="dimension" name="fyIconHeight"/>
+        <attr format="dimension" name="fyIconPadding"/>
+        <attr format="dimension" name="fyIconPaddingLeft"/>
+        <attr format="dimension" name="fyIconPaddingRight"/>
+        <attr format="dimension" name="fyIconPaddingTop"/>
+        <attr format="dimension" name="fyIconPaddingBottom"/>
+        <attr format="color" name="fyIconBackgroundColor"/>
+    </declare-styleable>
+    <declare-styleable name="TextRoundCornerProgressBar">
+        <attr format="color" name="fyTextProgressColor"/>
+        <attr format="color" name="fyTextProgressColorOutside"/>
+        <attr format="dimension" name="fyTextProgressSize"/>
+        <attr format="dimension" name="fyTextProgressMargin"/>
+        <attr format="string" name="fyTextProgress"/>
+        <attr format="enum" name="fyTextInsideGravity">
+            <enum name="start" value="0"/>
+            <enum name="end" value="1"/>
+        </attr>
+        <attr format="enum" name="fyTextOutsideGravity">
+            <enum name="start" value="0"/>
+            <enum name="end" value="1"/>
+        </attr>
+        <attr format="enum" name="fyTextPositionPriority">
+            <enum name="inside" value="0"/>
+            <enum name="outside" value="1"/>
+        </attr>
+    </declare-styleable>
+</resources>

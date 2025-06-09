@@ -1,0 +1,53 @@
+R_DEF: Internal format may change without notice
+local
+attr? fyAnimationEnable
+attr? fyAnimationSpeedScale
+attr? fyBackgroundColor
+attr? fyBackgroundPadding
+attr? fyIconBackgroundColor
+attr? fyIconHeight
+attr? fyIconPadding
+attr? fyIconPaddingBottom
+attr? fyIconPaddingLeft
+attr? fyIconPaddingRight
+attr? fyIconPaddingTop
+attr? fyIconSize
+attr? fyIconSrc
+attr? fyIconWidth
+attr? fyMax
+attr? fyProgress
+attr? fyProgressColor
+attr? fyProgressColors
+attr? fyRadius
+attr? fyReverse
+attr? fySecondaryProgress
+attr? fySecondaryProgressColor
+attr? fySecondaryProgressColors
+attr? fyTextInsideGravity
+attr? fyTextOutsideGravity
+attr? fyTextPositionPriority
+attr? fyTextProgress
+attr? fyTextProgressColor
+attr? fyTextProgressColorOutside
+attr? fyTextProgressMargin
+attr? fyTextProgressSize
+color round_corner_progress_bar_background_default
+color round_corner_progress_bar_progress_default
+color round_corner_progress_bar_secondary_progress_default
+id end
+id inside
+id iv_progress_icon
+id layout_background
+id layout_progress
+id layout_progress_holder
+id layout_secondary_progress
+id outside
+id start
+id tv_progress
+layout layout_icon_round_corner_progress_bar
+layout layout_round_corner_progress_bar
+layout layout_text_round_corner_progress_bar
+styleable AnimatedRoundCornerProgressBar fyAnimationEnable fyAnimationSpeedScale
+styleable BaseRoundCornerProgressBar fyReverse fyProgress fyMax fySecondaryProgress fyBackgroundPadding fyRadius fyProgressColor fyProgressColors fySecondaryProgressColor fySecondaryProgressColors fyBackgroundColor
+styleable IconRoundCornerProgressBar fyIconSrc fyIconSize fyIconWidth fyIconHeight fyIconPadding fyIconPaddingLeft fyIconPaddingRight fyIconPaddingTop fyIconPaddingBottom fyIconBackgroundColor
+styleable TextRoundCornerProgressBar fyTextProgressColor fyTextProgressColorOutside fyTextProgressSize fyTextProgressMargin fyTextProgress fyTextInsideGravity fyTextOutsideGravity fyTextPositionPriority

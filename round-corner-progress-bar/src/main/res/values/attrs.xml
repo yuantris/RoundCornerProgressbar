@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Copyright 2015 Akexorcist
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<resources>
+
+    <declare-styleable name="BaseRoundCornerProgressBar">
+        <attr name="fyReverse" format="boolean" />
+        <attr name="fyProgress" format="float" />
+        <attr name="fyMax" format="float" />
+        <attr name="fySecondaryProgress" format="float" />
+        <attr name="fyBackgroundPadding" format="dimension" />
+        <attr name="fyRadius" format="dimension" />
+        <attr name="fyProgressColor" format="color" />
+        <attr name="fyProgressColors" format="reference" />
+        <attr name="fySecondaryProgressColor" format="color" />
+        <attr name="fySecondaryProgressColors" format="reference" />
+        <attr name="fyBackgroundColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="AnimatedRoundCornerProgressBar">
+        <attr name="fyAnimationEnable" format="boolean" />
+        <attr name="fyAnimationSpeedScale" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="IconRoundCornerProgressBar">
+        <attr name="fyIconSrc" format="integer" />
+        <attr name="fyIconSize" format="dimension" />
+        <attr name="fyIconWidth" format="dimension" />
+        <attr name="fyIconHeight" format="dimension" />
+        <attr name="fyIconPadding" format="dimension" />
+        <attr name="fyIconPaddingLeft" format="dimension" />
+        <attr name="fyIconPaddingRight" format="dimension" />
+        <attr name="fyIconPaddingTop" format="dimension" />
+        <attr name="fyIconPaddingBottom" format="dimension" />
+        <attr name="fyIconBackgroundColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="TextRoundCornerProgressBar">
+        <attr name="fyTextProgressColor" format="color" />
+        <attr name="fyTextProgressColorOutside" format="color" />
+        <attr name="fyTextProgressSize" format="dimension" />
+        <attr name="fyTextProgressMargin" format="dimension" />
+        <attr name="fyTextProgress" format="string" />
+        <attr name="fyTextInsideGravity" format="enum">
+            <enum name="start" value="0"/>
+            <enum name="end" value="1"/>
+        </attr>
+        <attr name="fyTextOutsideGravity" format="enum">
+            <enum name="start" value="0"/>
+            <enum name="end" value="1"/>
+        </attr>
+        <attr name="fyTextPositionPriority" format="enum">
+            <enum name="inside" value="0"/>
+            <enum name="outside" value="1"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

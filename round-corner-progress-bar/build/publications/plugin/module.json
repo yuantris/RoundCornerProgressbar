@@ -1,0 +1,90 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.core.widget",
+    "module": "progressbar",
+    "version": "1.0.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.4"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.7.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "progressbar-1.0.0-SNAPSHOT.aar",
+          "url": "progressbar-1.0.0-SNAPSHOT.aar",
+          "size": 64976,
+          "sha512": "33b6dadf16598c2db5a10dcb6552ada80e269932eda442297f7ce0f5ecaa4d901d3c97d8f2a49b7565a6dfea271f67558cfb1a5baf819835c5a9d79d4f88ac5f",
+          "sha256": "a5993247eca10a2e3a987da87bf3bc98bad48c7847aa8cb26a9aa38799669290",
+          "sha1": "daac616b72bacd2176a2df837cfc09321de58232",
+          "md5": "d8e143205044cec1068b027bba9fc3eb"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.7.20"
+          }
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "androidx.customview",
+          "module": "customview",
+          "version": {
+            "requires": "1.1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "progressbar-1.0.0-SNAPSHOT.aar",
+          "url": "progressbar-1.0.0-SNAPSHOT.aar",
+          "size": 64976,
+          "sha512": "33b6dadf16598c2db5a10dcb6552ada80e269932eda442297f7ce0f5ecaa4d901d3c97d8f2a49b7565a6dfea271f67558cfb1a5baf819835c5a9d79d4f88ac5f",
+          "sha256": "a5993247eca10a2e3a987da87bf3bc98bad48c7847aa8cb26a9aa38799669290",
+          "sha1": "daac616b72bacd2176a2df837cfc09321de58232",
+          "md5": "d8e143205044cec1068b027bba9fc3eb"
+        }
+      ]
+    }
+  ]
+}
